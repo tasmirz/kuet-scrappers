@@ -33,7 +33,7 @@ function faculty_parser(html: string) {
     const designation = element.querySelector('span')?.textContent
 
     const email = email_decoder(
-      element.querySelector('.mx-1 span')?.getAttribute('data-cfemail')
+      element.querySelector('.mx-1 span')?.getAttribute('data-cfemail') || ''
     )
     const link = element.querySelector('a')?.getAttribute('href')
     facultyList.push({ name, designation, email, link })

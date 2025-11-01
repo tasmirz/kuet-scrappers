@@ -4,7 +4,6 @@
   "description": "",
   "license": "AGPL-3.0-or-later",
   "author": "tasmirz",
-  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p .",
